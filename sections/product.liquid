@@ -186,7 +186,15 @@
                     </div>
                     {% endif %}
                 {% endif %}
+
+                {%
+                        render 'choose-your-be-input'
+                %}
+
+
+
             {% when 'buy_buttons' %}
+
                 <div class="form-actions">
                     <button
                     class="button
@@ -350,6 +358,7 @@
         {% endfor %}
       {% endform %}
     </div>
+
 
 </div>
 

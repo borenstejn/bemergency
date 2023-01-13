@@ -42,6 +42,15 @@
         enable_lightbox: true
       %}
 
+        {%
+                render 'product-media-custom',
+                product: product,
+                section_id: section.id,
+                featured_media_id: featured_media.id,
+                enable_video_loop: section.settings.videoLooping,
+                enable_lightbox: true
+        %}
+
       {% render "product-badges", item: product, collection: collection, wrapper: true %}
 
       {% render "product-thumbnails", product: product %}

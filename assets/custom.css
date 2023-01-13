@@ -5,3 +5,147 @@ Please add any custom CSS code in here, it will be easier to transfer if updatin
 We highly recommend labelling changes, or App installs, so these can also be updated or removed as needed.
 
 */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+#product-media {
+    /* other styles */
+}
+
+#product-media .custom-visual {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#product-media .main-image,
+#product-media .custom-stains,
+#product-media .custom-text {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.invisible {
+    visibility: collapse;
+}
+
+.pink-background {
+    color: yellow;
+}
+
+.be-word {
+    color: white;
+}
+.custom-visual {
+    display:flex;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.hoodie .back-print {
+    display:flex;
+    position: absolute;
+    top: 90px;
+    left: 0;
+}
+
+.back-print {
+    display:flex;
+    position: absolute;
+    top: 90px;
+    left: 0;
+}
+
+.crewneck .back-print {
+    display:flex;
+    position: absolute;
+    top: -30px;
+    left: 0;
+}
+
+
+.custom-text {
+    position: absolute;
+    top: 115px;
+    left: 114px;
+    font-size: 38px;
+    letter-spacing: 0.06em;
+    line-height: 0.85em;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    width: 50% !important;
+    min-height: 10px !important;
+    height: auto !important;
+    z-index: 1;
+}
+
+.hoodie .custom-text {
+    font-size: 38px;
+}
+
+.crewneck .custom-text {
+    font-size: 50px;
+}
+
+.large-input {
+    font-size: 32px;
+    padding: 16px;
+    font-weight: bold;
+}
+
+.cropped .custom-text {
+    font-size: 38px;
+    top: 100px;
+}
+
+.custom-stains {
+    position: relative;
+    min-height: 10px !important;
+    height: auto !important;
+    z-index: 100;
+    top: 90px;
+    left: 135px;
+    width: 40% !important;
+}
+
+.crewneck .custom-stains {
+    top: 90px;
+    left: 135px;
+    width: 40% !important;
+}
+
+.hoodie .custom-stains {
+    top: 100px;
+    left: 145px;
+    width: 35% !important;
+}
+
+.cropped .custom-stains {
+    top: 85px;
+    left: 150px;
+    width: 25% !important;
+}
+
+.btn-check:checked + .btn-secondary {
+    background-color: pink;
+    color: black;
+}
+
+/* bebas-neue-regular - latin */
+@font-face {
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/bebas-neue-v9-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+    url('../fonts/bebas-neue-v9-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/bebas-neue-v9-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/bebas-neue-v9-latin-regular.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/bebas-neue-v9-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/bebas-neue-v9-latin-regular.svg#BebasNeue') format('svg'); /* Legacy iOS */
+}

@@ -1,1 +1,291 @@
-{"current":{"colorHeader":"#303030","colorBody":"#303030","colorLinks":"#e6dbaf","colorBorder":"#e4e4e4","colorBackground":"#ffffff","colorButtons":"#000000","colorButtonsText":"#fffefa","colorBadges":"#ffffff","soldOutBackground":"#303030","saleBackground":"#fa7b95","lowStockBackground":"#303030","newProductBackground":"#303030","bestSellingBackground":"#303030","customBadgeBackground":"#fa7b95","colorHeaderBackground":"#FFFFFF","colorHeaderText":"#303030","fullBleedColor":"#303030","colorPopupBackground":"#ffffff","colorPopupText":"#303030","secondaryFont":"montserrat_n7","headingSize":"22px","headingCase":"uppercase","navigationFontSize":12,"navigationCase":"uppercase","navigationSpacing":1,"primaryFont":"montserrat_n5","bodySize":14,"buttonFontWeight":"bolder","buttonCase":"uppercase","buttonLetterSpacing":1,"sectionBtnLabel":"VOIR LA COLLECTION","sectionTextAlignment":"center","sectionOverlayOpacity":20,"collageLayoutEnabled":false,"collectionsPerRow":3,"expandCollections":true,"ajax_cart_method":"page","productColorSwatches":"","show_second_image_on_hover":true,"productAnimateBadges":true,"productStockLevel":2,"headerSearchStyle":"minimal","predictive_search_pages":true,"predictive_search_articles":true,"predictive_search_collections":true,"breadcrumbs":true,"shareFacebook":true,"shareTwitter":true,"sharePinterest":true,"shareFancy":true,"socialInstagram":"http:\/\/www.instagram.com\/be_lapage","socialTiktok":"https:\/\/www.tiktok.com\/@becollections","favicon":"shopify:\/\/shop_images\/BE_Favicon.png","popupEnable":false,"popupTestMode":false,"popupHeading":"1 MUG OFFERT POUR UN BE-NÔME ACHETÉ","popupText":"<p><\/p><p>BE s'engage au coté des femmes : <br\/><br\/>Pour l'achat d'un BE-NÔME (2 hoodies) spécial Journée des droits des femmes, <strong>BE vous offre un mug BE YOURSELF d'une valeur de 23,90€.<\/strong><br\/><br\/><a href=\"\/products\/be-nome-journee-des-droits-de-la-femme\" title=\"BE-NÔME : Journée des droits des femmes - 1 mug BE YOURSELF offert pour l'achat de deux hoodies\"><strong>Cliquez ici pour bénéficier de l'offre<\/strong><\/a><\/p>","popupImage":"shopify:\/\/shop_images\/BE-JourneeDesDroitsDesFemmes.png","popupDelay":3,"popupShowSocial":false,"popupShowNewsletter":false,"checkout_logo_image":"shopify:\/\/shop_images\/BE-Proud-Hoodies-Recovered_00233293-02e3-4560-9dff-d6a4b2fe56ec.png","checkout_logo_size":"large","checkout_heading_font":"Raleway","checkout_body_font":"Raleway","checkout_accent_color":"#fa7b95","checkout_button_color":"#2462af","sections":{"announcement-bar":{"type":"announcement-bar","settings":{"enable_announcement_bar":true,"message_text":"<p><strong>LES SOLDES COMMENCENT AVEC -20% SUR LE SITE<\/strong><\/p>","fontSize":13,"letterSpacing":2,"notification-bar--background-colour":"#f5edcb","notification-bar--text-colour":"#fa7b95"}},"header":{"type":"header","blocks":{"4936d2a2-8fff-4b2c-8373-bcff7f5a7f61":{"type":"menu","disabled":true,"settings":{"navigationItem":"Test","navigationMegaImage":"shopify:\/\/shop_images\/Bandeau_SH.png","navigationMegaImageLink":""}}},"block_order":["4936d2a2-8fff-4b2c-8373-bcff7f5a7f61"],"settings":{"full-width":true,"logo":"shopify:\/\/shop_images\/LogoBeVecto1.png","logoWidth":150,"logo_placement":"center","icon_style":"1","headerAccountContact":false,"showLocaleSelector":true,"showCurrencySelector":true,"navigationMainMenu":"main-menu","navigation_placement":"center","fullBleed":true,"fullBleedLogo":"shopify:\/\/shop_images\/LogoBeVecto1.png"}},"footer":{"type":"footer","blocks":{"footer-0":{"type":"footer-menu","settings":{"menu-title":"BE","menu":"legal2"}},"845f630a-1eb9-4d6e-9a8d-dd669275e0b6":{"type":"footer-menu","settings":{"menu-title":"Conditions de vente","menu":"legal"}},"c586b246-bbfd-4497-a5a5-3ecc39dbe74d":{"type":"footer-social","settings":{"socialTitle":"Stay with us"}},"footer-3":{"type":"mailing-list","settings":{"mailingTitle":"BE in touch !","text":""}}},"block_order":["footer-0","845f630a-1eb9-4d6e-9a8d-dd669275e0b6","c586b246-bbfd-4497-a5a5-3ecc39dbe74d","footer-3"],"settings":{"paymentIcons":true,"centerFooter":true,"stretchFooter":true,"showLocaleSelector":true,"showCurrencySelector":false}},"pina-instagram":{"type":"pina-instagram","settings":{}}},"content_for_index":["pina-instagram"],"blocks":{"10605408327587305396":{"type":"shopify:\/\/apps\/easygift-auto-add-to-cart\/blocks\/app-embed\/0f7d4f74-1e89-4820-aec4-6564d7e535d2","disabled":false,"settings":{"version":"v3"}}}},"presets":{"Berlin":{"colorHeader":"#303030","colorBody":"#303030","colorLinks":"#6f6f6f","colorBorder":"#e4e4e4","colorButtons":"#303030","soldOutBackground":"#303030","saleBackground":"#303030","lowStockBackground":"#303030","newProductBackground":"#303030","bestSellingBackground":"#303030","customBadgeBackground":"#303030","colorHeaderText":"#303030","colorPopupBackground":"#303030","secondaryFont":"montserrat_n6","headingSize":"20px","headingCase":"uppercase","navigationFontSize":12,"navigationCase":"uppercase","primaryFont":"montserrat_n5","bodySize":12,"buttonCase":"uppercase","buttonLetterSpacing":2,"sectionTextAlignment":"center","sectionOverlayOpacity":0,"collectionsPerRow":3,"expandCollections":false,"productAnimateBadges":true,"productStockLevel":10,"shareFacebook":true,"shareTwitter":true,"sharePinterest":true,"shareFancy":true,"popupEnable":true,"popupTestMode":false,"popupDelay":4},"Prague":{"colorHeader":"#333333","colorBody":"#333333","colorLinks":"#696969","colorBorder":"#ebebeb","soldOutBackground":"#696969","saleBackground":"#696969","lowStockBackground":"#333333","newProductBackground":"#333333","bestSellingBackground":"#333333","customBadgeBackground":"#333333","colorHeaderText":"#333333","colorPopupBackground":"#333333","secondaryFont":"century_gothic_n4","headingSize":"24px","headingCase":"uppercase","navigationFontSize":14,"navigationSpacing":3,"navigationCase":"uppercase","primaryFont":"avenir_next_rounded_n4","bodySize":16,"buttonFontWeight":"normal","buttonCase":"uppercase","buttonLetterSpacing":2,"sectionTextAlignment":"top left","sectionOverlayOpacity":0,"collectionsPerRow":3,"productAnimateBadges":true,"productStockLevel":6,"shareFacebook":true,"shareTwitter":true,"sharePinterest":true,"shareFancy":true,"popupEnable":true,"popupTestMode":false,"popupShowSocial":false},"Sofia":{"colorHeader":"#383838","colorBody":"#383838","colorLinks":"#6B6B6B","colorBorder":"#f0f0f0","colorButtons":"#6B6B6B","colorButtonsText":"#f0f0f0","soldOutBackground":"#6B6B6B","saleBackground":"#6B6B6B","lowStockBackground":"#6B6B6B","newProductBackground":"#6B6B6B","bestSellingBackground":"#6B6B6B","customBadgeBackground":"#6B6B6B","colorHeaderText":"#383838","colorPopupBackground":"#383838","colorPopupText":"#dedede","secondaryFont":"monotype_goudy_n4","headingSize":"24px","headingCase":"unedited","navigationFontSize":18,"navigationCase":"unedited","navigationSpacing":1,"primaryFont":"goudy_old_style_n4","bodySize":16,"buttonCase":"uppercase","buttonLetterSpacing":2,"sectionBtnLabel":"Shop Collection","sectionTextAlignment":"bottom right","sectionOverlayOpacity":0,"collageLayoutEnabled":false,"productAnimateBadges":true,"productStockLevel":10,"shareFacebook":true,"shareTwitter":true,"sharePinterest":true,"popupEnable":true,"popupTestMode":false}}}
+{
+  "current": {
+    "colorHeader": "#303030",
+    "colorBody": "#303030",
+    "colorLinks": "#e6dbaf",
+    "colorBorder": "#e4e4e4",
+    "colorBackground": "#ffffff",
+    "colorButtons": "#000000",
+    "colorButtonsText": "#fffefa",
+    "colorBadges": "#ffffff",
+    "soldOutBackground": "#303030",
+    "saleBackground": "#fa7b95",
+    "lowStockBackground": "#303030",
+    "newProductBackground": "#303030",
+    "bestSellingBackground": "#303030",
+    "customBadgeBackground": "#fa7b95",
+    "colorHeaderBackground": "#FFFFFF",
+    "colorHeaderText": "#303030",
+    "fullBleedColor": "#303030",
+    "colorPopupBackground": "#ffffff",
+    "colorPopupText": "#303030",
+    "secondaryFont": "montserrat_n4",
+    "headingSize": "22px",
+    "headingCase": "uppercase",
+    "navigationFontSize": 12,
+    "navigationCase": "uppercase",
+    "navigationSpacing": 1,
+    "primaryFont": "montserrat_n5",
+    "bodySize": 14,
+    "buttonFontWeight": "bolder",
+    "buttonCase": "uppercase",
+    "buttonLetterSpacing": 1,
+    "sectionBtnLabel": "VOIR LA COLLECTION",
+    "sectionTextAlignment": "center",
+    "sectionOverlayOpacity": 20,
+    "collageLayoutEnabled": false,
+    "collectionsPerRow": 3,
+    "expandCollections": true,
+    "ajax_cart_method": "page",
+    "productColorSwatches": "",
+    "show_second_image_on_hover": true,
+    "productAnimateBadges": true,
+    "productStockLevel": 2,
+    "headerSearchStyle": "minimal",
+    "predictive_search_pages": true,
+    "predictive_search_articles": true,
+    "predictive_search_collections": true,
+    "breadcrumbs": true,
+    "shareFacebook": true,
+    "shareTwitter": true,
+    "sharePinterest": true,
+    "shareFancy": true,
+    "socialInstagram": "http:\/\/www.instagram.com\/be_lapage",
+    "socialTiktok": "https:\/\/www.tiktok.com\/@becollections",
+    "favicon": "shopify:\/\/shop_images\/BE_Favicon.png",
+    "popupEnable": false,
+    "popupTestMode": false,
+    "popupHeading": "1 MUG OFFERT POUR UN BE-NÔME ACHETÉ",
+    "popupText": "<p><\/p><p>BE s'engage au coté des femmes : <br\/><br\/>Pour l'achat d'un BE-NÔME (2 hoodies) spécial Journée des droits des femmes, <strong>BE vous offre un mug BE YOURSELF d'une valeur de 23,90€.<\/strong><br\/><br\/><a href=\"\/products\/be-nome-journee-des-droits-de-la-femme\" title=\"BE-NÔME : Journée des droits des femmes - 1 mug BE YOURSELF offert pour l'achat de deux hoodies\"><strong>Cliquez ici pour bénéficier de l'offre<\/strong><\/a><\/p>",
+    "popupImage": "shopify:\/\/shop_images\/BE-JourneeDesDroitsDesFemmes.png",
+    "popupDelay": 3,
+    "popupShowSocial": false,
+    "popupShowNewsletter": false,
+    "checkout_logo_image": "shopify:\/\/shop_images\/BE-Proud-Hoodies-Recovered_00233293-02e3-4560-9dff-d6a4b2fe56ec.png",
+    "checkout_logo_size": "large",
+    "checkout_heading_font": "Raleway",
+    "checkout_body_font": "Raleway",
+    "checkout_accent_color": "#fa7b95",
+    "checkout_button_color": "#2462af",
+    "sections": {
+      "announcement-bar": {
+        "type": "announcement-bar",
+        "settings": {
+          "enable_announcement_bar": true,
+          "message_text": "<p><strong>LES SOLDES COMMENCENT AVEC -20% SUR LE SITE<\/strong><\/p>",
+          "fontSize": 13,
+          "letterSpacing": 2,
+          "notification-bar--background-colour": "#f5edcb",
+          "notification-bar--text-colour": "#fa7b95"
+        }
+      },
+      "header": {
+        "type": "header",
+        "blocks": {
+          "4936d2a2-8fff-4b2c-8373-bcff7f5a7f61": {
+            "type": "menu",
+            "disabled": true,
+            "settings": {
+              "navigationItem": "Test",
+              "navigationMegaImage": "shopify:\/\/shop_images\/Bandeau_SH.png",
+              "navigationMegaImageLink": ""
+            }
+          }
+        },
+        "block_order": [
+          "4936d2a2-8fff-4b2c-8373-bcff7f5a7f61"
+        ],
+        "settings": {
+          "full-width": true,
+          "logo": "shopify:\/\/shop_images\/LogoBeVecto1.png",
+          "logoWidth": 150,
+          "logo_placement": "center",
+          "icon_style": "1",
+          "headerAccountContact": false,
+          "showLocaleSelector": true,
+          "showCurrencySelector": true,
+          "navigationMainMenu": "main-menu",
+          "navigation_placement": "center",
+          "fullBleed": true,
+          "fullBleedLogo": "shopify:\/\/shop_images\/LogoBeVecto1.png"
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "footer-0": {
+            "type": "footer-menu",
+            "settings": {
+              "menu-title": "BE",
+              "menu": "legal2"
+            }
+          },
+          "845f630a-1eb9-4d6e-9a8d-dd669275e0b6": {
+            "type": "footer-menu",
+            "settings": {
+              "menu-title": "Conditions de vente",
+              "menu": "legal"
+            }
+          },
+          "c586b246-bbfd-4497-a5a5-3ecc39dbe74d": {
+            "type": "footer-social",
+            "settings": {
+              "socialTitle": "Stay with us"
+            }
+          },
+          "footer-3": {
+            "type": "mailing-list",
+            "settings": {
+              "mailingTitle": "BE in touch !",
+              "text": ""
+            }
+          }
+        },
+        "block_order": [
+          "footer-0",
+          "845f630a-1eb9-4d6e-9a8d-dd669275e0b6",
+          "c586b246-bbfd-4497-a5a5-3ecc39dbe74d",
+          "footer-3"
+        ],
+        "settings": {
+          "paymentIcons": true,
+          "centerFooter": true,
+          "stretchFooter": true,
+          "showLocaleSelector": true,
+          "showCurrencySelector": false
+        }
+      },
+      "pina-instagram": {
+        "type": "pina-instagram",
+        "settings": {
+        }
+      }
+    },
+    "content_for_index": [
+      "pina-instagram"
+    ],
+    "blocks": {
+      "10605408327587305396": {
+        "type": "shopify:\/\/apps\/easygift-auto-add-to-cart\/blocks\/app-embed\/0f7d4f74-1e89-4820-aec4-6564d7e535d2",
+        "disabled": false,
+        "settings": {
+          "version": "v3"
+        }
+      }
+    }
+  },
+  "presets": {
+    "Berlin": {
+      "colorHeader": "#303030",
+      "colorBody": "#303030",
+      "colorLinks": "#6f6f6f",
+      "colorBorder": "#e4e4e4",
+      "colorButtons": "#303030",
+      "soldOutBackground": "#303030",
+      "saleBackground": "#303030",
+      "lowStockBackground": "#303030",
+      "newProductBackground": "#303030",
+      "bestSellingBackground": "#303030",
+      "customBadgeBackground": "#303030",
+      "colorHeaderText": "#303030",
+      "colorPopupBackground": "#303030",
+      "secondaryFont": "montserrat_n6",
+      "headingSize": "20px",
+      "headingCase": "uppercase",
+      "navigationFontSize": 12,
+      "navigationCase": "uppercase",
+      "primaryFont": "montserrat_n5",
+      "bodySize": 12,
+      "buttonCase": "uppercase",
+      "buttonLetterSpacing": 2,
+      "sectionTextAlignment": "center",
+      "sectionOverlayOpacity": 0,
+      "collectionsPerRow": 3,
+      "expandCollections": false,
+      "productAnimateBadges": true,
+      "productStockLevel": 10,
+      "shareFacebook": true,
+      "shareTwitter": true,
+      "sharePinterest": true,
+      "shareFancy": true,
+      "popupEnable": true,
+      "popupTestMode": false,
+      "popupDelay": 4
+    },
+    "Prague": {
+      "colorHeader": "#333333",
+      "colorBody": "#333333",
+      "colorLinks": "#696969",
+      "colorBorder": "#ebebeb",
+      "soldOutBackground": "#696969",
+      "saleBackground": "#696969",
+      "lowStockBackground": "#333333",
+      "newProductBackground": "#333333",
+      "bestSellingBackground": "#333333",
+      "customBadgeBackground": "#333333",
+      "colorHeaderText": "#333333",
+      "colorPopupBackground": "#333333",
+      "secondaryFont": "century_gothic_n4",
+      "headingSize": "24px",
+      "headingCase": "uppercase",
+      "navigationFontSize": 14,
+      "navigationSpacing": 3,
+      "navigationCase": "uppercase",
+      "primaryFont": "avenir_next_rounded_n4",
+      "bodySize": 16,
+      "buttonFontWeight": "normal",
+      "buttonCase": "uppercase",
+      "buttonLetterSpacing": 2,
+      "sectionTextAlignment": "top left",
+      "sectionOverlayOpacity": 0,
+      "collectionsPerRow": 3,
+      "productAnimateBadges": true,
+      "productStockLevel": 6,
+      "shareFacebook": true,
+      "shareTwitter": true,
+      "sharePinterest": true,
+      "shareFancy": true,
+      "popupEnable": true,
+      "popupTestMode": false,
+      "popupShowSocial": false
+    },
+    "Sofia": {
+      "colorHeader": "#383838",
+      "colorBody": "#383838",
+      "colorLinks": "#6B6B6B",
+      "colorBorder": "#f0f0f0",
+      "colorButtons": "#6B6B6B",
+      "colorButtonsText": "#f0f0f0",
+      "soldOutBackground": "#6B6B6B",
+      "saleBackground": "#6B6B6B",
+      "lowStockBackground": "#6B6B6B",
+      "newProductBackground": "#6B6B6B",
+      "bestSellingBackground": "#6B6B6B",
+      "customBadgeBackground": "#6B6B6B",
+      "colorHeaderText": "#383838",
+      "colorPopupBackground": "#383838",
+      "colorPopupText": "#dedede",
+      "secondaryFont": "monotype_goudy_n4",
+      "headingSize": "24px",
+      "headingCase": "unedited",
+      "navigationFontSize": 18,
+      "navigationCase": "unedited",
+      "navigationSpacing": 1,
+      "primaryFont": "goudy_old_style_n4",
+      "bodySize": 16,
+      "buttonCase": "uppercase",
+      "buttonLetterSpacing": 2,
+      "sectionBtnLabel": "Shop Collection",
+      "sectionTextAlignment": "bottom right",
+      "sectionOverlayOpacity": 0,
+      "collageLayoutEnabled": false,
+      "productAnimateBadges": true,
+      "productStockLevel": 10,
+      "shareFacebook": true,
+      "shareTwitter": true,
+      "sharePinterest": true,
+      "popupEnable": true,
+      "popupTestMode": false
+    }
+  }
+}

@@ -1,12 +1,12 @@
 {% assign current_variant = product.selected_or_first_available_variant %}
 
 {% case section.settings.imageSize %}
-  {% when 'small' %}
-    {%- assign product_image_width = '40%' -%}
-  {% when 'medium' %}
-    {%- assign product_image_width = '50%' -%}
-  {% when 'large' %}
-    {%- assign product_image_width = '60%' -%}
+    {% when 'small' %}
+        {%- assign product_image_width = '40%' -%}
+    {% when 'medium' %}
+        {%- assign product_image_width = '50%' -%}
+    {% when 'large' %}
+        {%- assign product_image_width = '60%' -%}
 {% endcase %}
 
 <style>
@@ -16,47 +16,53 @@
 </style>
 
 <div
-  class="page-wrapper"
-  data-product="{{ product.handle }}"
-  data-product-json="{{ product | json | escape }}"
-  data-product-current-variant="{{ current_variant | json | escape }}"
-  data-product-deeplinking="true"
-  data-product-carturl="{{ routes.cart_url }}"
-  data-section-id="{{ section.id }}"
-  data-section-product-gallery
+        class="page-wrapper"
+        data-product="{{ product.handle }}"
+        data-product-json="{{ product | json | escape }}"
+        data-product-current-variant="{{ current_variant | json | escape }}"
+        data-product-deeplinking="true"
+        data-product-carturl="{{ routes.cart_url }}"
+        data-section-id="{{ section.id }}"
+        data-section-product-gallery
 >
 
-  <div class="product-wrapper grid">
-
-    <div class="product-images
+    <div class="product-wrapper grid">
+        <div class="product-images
     product-media
     {% if section.settings.productImageChangesVariant %} change-variant--enabled{% endif %}"
-    >
-      {% assign featured_media = current_variant.featured_media | default: product.featured_media %}
-      {%
-        render 'product-media',
-        product: product,
-        section_id: section.id,
-        featured_media_id: featured_media.id,
-        enable_video_loop: section.settings.videoLooping,
-        enable_lightbox: true
-      %}
+        >
+            {% assign featured_media = current_variant.featured_media | default: product.featured_media %}
+            {%
+                    render 'product-media',
+                    product: product,
+                    section_id: section.id,
+                    featured_media_id: featured_media.id,
+                    enable_video_loop: section.settings.videoLooping,
+                    enable_lightbox: true
+            %}
 
-        {%
-                render 'product-media-custom',
-                product: product,
-                section_id: section.id,
-                featured_media_id: featured_media.id,
-                enable_video_loop: section.settings.videoLooping,
-                enable_lightbox: true
-        %}
 
-      {% render "product-badges", item: product, collection: collection, wrapper: true %}
 
-      {% render "product-thumbnails", product: product %}
+            {% comment %} for test {% endcomment %}
+
+            {%
+                    render 'product-media-custom',
+                    product: product,
+                    section_id: section.id,
+                    featured_media_id: featured_media.id,
+                    enable_video_loop: section.settings.videoLooping,
+                    enable_lightbox: true
+            %}
+
+
+
+
+            {% render "product-badges", item: product, collection: collection, wrapper: true %}
+
+            {% render "product-thumbnails", product: product %}
+        </div>
+
     </div>
-
-  </div>
 
 </div>
 

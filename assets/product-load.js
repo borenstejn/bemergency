@@ -3,6 +3,7 @@ var $customImage = $('.custom-image');
 var $customField = $('.custom-field');
 var $customText = $('.custom-text');
 var $beWords = $('#be-words');
+var $pinkButton = $('.form-radio[value="Rose"]');
 var inCustomizationMode = false
 
 var summer2023 = [
@@ -51,8 +52,8 @@ function loadCurrentStains(optionSelected) {
     console.log("loadCurrentStains")
 
 
-    if (('.color .option--active .form-radio')[0] !== 'undefined') {
-        colorSelected = $('.color .option--active .form-radio')[0].value.replace(/\s+/g, '').toLowerCase();
+    if (('[data-product-swatch="1"] .option--active .form-radio')[0] !== 'undefined') {
+        colorSelected = $('[data-product-swatch="1"] .option--active .form-radio')[0].value.replace(/\s+/g, '').toLowerCase();
     }
     console.log(colorSelected)
     console.log("optionSelected")
@@ -62,14 +63,17 @@ function loadCurrentStains(optionSelected) {
 
 
 if (myProductTitle.includes('customizable')) {
-    // console.log("myProductTitle");
-    // console.log(myProductTitle);
+    console.log("myProductTitle");
     window.addEventListener('load', function () {
+        $pinkButton.click();
+        console.log("myProductTitle2");
         // console.log('customizable')
         inCustomizationMode = true
-        colorSelected = $('.color .option--active .form-radio')[0].value.replace(/\s+/g, '').toLowerCase();
+        colorSelected = $('.option--active .form-radio')[1].value.replace(/\s+/g, '').toLowerCase();
 
+        console.log("beforesetsrc");
         setSrc(colorSelected, 'other', 'png');
+        console.log("aftersetsrc");
         $customImage.addClass(myProductType);
         $mainImages.hide();
         $customImage.show();
@@ -112,12 +116,13 @@ $('#be-words input[type=radio]').change(function() {
         $mainImages.toggle();
         $customImage.toggle();
     };
-    colorSelected = $('.color .option--active .form-radio')[0].value.toLowerCase();
+    colorSelected = $('[data-product-swatch="1"] .option--active .form-radio')[0].value.toLowerCase();
     setSrc(colorSelected, this.value, 'jpg');
     $('.back-print').hide();
 });
 
-$('.color .form-radio').click(function() {
+$('[data-product-swatch="1"] .form-radio').click(function() {
+    console.log("click")
     colorSelected = this.value.replace(/\s+/g, '').toLowerCase();
     // console.log("newColor");
     // console.log(colorSelected);

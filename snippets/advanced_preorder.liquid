@@ -1,0 +1,136 @@
+{% if template == 'collection' %}
+{% assign productids = '{ "collections": [' %}
+{% paginate collection.products by 50 %}
+{% for product in collection.products %}
+{%- assign current_variant = product.selected_or_first_available_variant -%}
+{% if forloop.last == true %}
+{% assign productids = productids | append: '{'   %}
+{% assign productids = productids | append: '"product_id":' | append: product.id | append: ','   %}
+{% assign productids = productids | append: '"handle":' | append: '"' | append: product.handle | append: '"' | append: ','   %}
+{% assign productids = productids | append: '"variant_id":' | append: current_variant.id | append: ','   %}
+{% assign productids = productids | append: '"inventory_quantity":' | append:  current_variant.inventory_quantity | append: ','   %}
+{% assign productids = productids | append: '"inventory_management":' | append: '"' | append:  current_variant.inventory_management | append: '"' | append: ','   %}
+{% assign productids = productids | append: '"inventory_policy":'  | append: '"' | append: current_variant.inventory_policy  | append: '"'   %}
+{% assign productids = productids | append: '}'   %}
+{% else %}
+{% assign productids = productids | append: '{'   %}
+{% assign productids = productids | append: '"product_id":' | append: product.id | append: ','   %}
+{% assign productids = productids | append: '"handle":' | append: '"' | append: product.handle | append: '"' | append: ','   %}
+{% assign productids = productids | append: '"variant_id":' | append: current_variant.id | append: ','   %}
+{% assign productids = productids | append: '"inventory_quantity":' | append: current_variant.inventory_quantity | append: ','   %}
+{% assign productids = productids | append: '"inventory_management":' | append: '"' | append:  current_variant.inventory_management | append: '"' | append: ','   %}
+{% assign productids = productids | append: '"inventory_policy":'  | append: '"' | append: current_variant.inventory_policy  | append: '"'    %}
+{% assign productids = productids | append: '},'   %}
+{% endif%}
+{% endfor %}
+{% endpaginate %}
+{% assign productids = productids | append: ']' %}
+{% assign productids = productids | append: '}' %}
+<script>
+var advance_script = '{{productids}}';  
+</script>
+{% endif%}
+
+{% if template == 'search' %}
+{% assign productids = '{ "Search": [' %}
+{% for item in search.results %}
+    
+{% if item.object_type == 'product' %}
+{%  assign product = item %}
+{%- assign current_variant = product.selected_or_first_available_variant -%}
+{% if forloop.last == true %}
+{% assign productids = productids | append: '{'   %}
+{% assign productids = productids | append: '"product_id":' | append: product.id | append: ','   %}
+{% assign productids = productids | append: '"handle":' | append: '"' | append: product.handle | append: '"' | append: ','   %}
+{% assign productids = productids | append: '"variant_id":' | append: current_variant.id | append: ','   %}
+{% assign productids = productids | append: '"inventory_quantity":' | append:  current_variant.inventory_quantity | append: ','   %}
+{% assign productids = productids | append: '"inventory_management":' | append: '"' | append:  current_variant.inventory_management | append: '"' | append: ','   %}
+{% assign productids = productids | append: '"inventory_policy":'  | append: '"' | append: current_variant.inventory_policy  | append: '"'   %}
+{% assign productids = productids | append: '}'   %}
+{% else %}
+{% assign productids = productids | append: '{'   %}
+{% assign productids = productids | append: '"product_id":' | append: product.id | append: ','   %}
+{% assign productids = productids | append: '"handle":' | append: '"' | append: product.handle | append: '"' | append: ','   %}
+{% assign productids = productids | append: '"variant_id":' | append: current_variant.id | append: ','   %}
+{% assign productids = productids | append: '"inventory_quantity":' | append: current_variant.inventory_quantity | append: ','   %}
+{% assign productids = productids | append: '"inventory_management":' | append: '"' | append:  current_variant.inventory_management | append: '"' | append: ','   %}
+{% assign productids = productids | append: '"inventory_policy":'  | append: '"' | append: current_variant.inventory_policy  | append: '"'    %}
+{% assign productids = productids | append: '},'   %}
+{% endif%}        
+{% endif%}
+        
+ {% endfor %}
+        
+{% assign productids = productids | append: ']' %}
+{% assign productids = productids | append: '}' %}
+
+
+<script>
+var advance_script = '{{productids}}';  
+</script>
+{% endif%}
+
+
+{% if template == 'product' %}
+{% assign productids = '{ "products": [' %}
+
+{% for product in collections.all.products %}
+{%- assign current_variant = product.selected_or_first_available_variant -%}
+{% if forloop.last == true %}
+{% assign productids = productids | append: '{'   %}
+{% assign productids = productids | append: '"product_id":' | append: product.id | append: ','   %}
+{% assign productids = productids | append: '"handle":' | append: '"' | append: product.handle | append: '"' | append: ','   %}
+{% assign productids = productids | append: '"variant_id":' | append: current_variant.id | append: ','   %}
+{% assign productids = productids | append: '"inventory_quantity":' | append:  current_variant.inventory_quantity | append: ','   %}
+{% assign productids = productids | append: '"inventory_management":' | append: '"' | append:  current_variant.inventory_management | append: '"' | append: ','   %}
+{% assign productids = productids | append: '"inventory_policy":'  | append: '"' | append: current_variant.inventory_policy  | append: '"'   %}
+{% assign productids = productids | append: '}'   %}
+{% else %}
+{% assign productids = productids | append: '{'   %}
+{% assign productids = productids | append: '"product_id":' | append: product.id | append: ','   %}
+{% assign productids = productids | append: '"handle":' | append: '"' | append: product.handle | append: '"' | append: ','   %}
+{% assign productids = productids | append: '"variant_id":' | append: current_variant.id | append: ','   %}
+{% assign productids = productids | append: '"inventory_quantity":' | append: current_variant.inventory_quantity | append: ','   %}
+{% assign productids = productids | append: '"inventory_management":' | append: '"' | append:  current_variant.inventory_management | append: '"' | append: ','   %}
+{% assign productids = productids | append: '"inventory_policy":'  | append: '"' | append: current_variant.inventory_policy  | append: '"'    %}
+{% assign productids = productids | append: '},'   %}
+{% endif%}
+{% endfor %}
+
+{% assign productids = productids | append: ']' %}
+{% assign productids = productids | append: '}' %}
+<script>
+var advance_script = '{{productids}}';  
+</script>
+{% endif%}
+
+{% if template == 'index' %}
+{% assign productids = '{ "collections": [' %}
+{% for product in collections.all.products %}
+{%- assign current_variant = product.selected_or_first_available_variant -%}
+{% if forloop.last == true %}
+{% assign productids = productids | append: '{'   %}
+{% assign productids = productids | append: '"product_id":' | append: product.id | append: ','   %}
+{% assign productids = productids | append: '"handle":' | append: '"' | append: product.handle | append: '"' | append: ','   %}
+{% assign productids = productids | append: '"variant_id":' | append: current_variant.id | append: ','   %}
+{% assign productids = productids | append: '"inventory_quantity":' | append:  current_variant.inventory_quantity | append: ','   %}
+{% assign productids = productids | append: '"inventory_management":' | append: '"' | append:  current_variant.inventory_management | append: '"' | append: ','   %}
+{% assign productids = productids | append: '"inventory_policy":'  | append: '"' | append: current_variant.inventory_policy  | append: '"'   %}
+{% assign productids = productids | append: '}'   %}
+{% else %}
+{% assign productids = productids | append: '{'   %}
+{% assign productids = productids | append: '"product_id":' | append: product.id | append: ','   %}
+{% assign productids = productids | append: '"handle":' | append: '"' | append: product.handle | append: '"' | append: ','   %}
+{% assign productids = productids | append: '"variant_id":' | append: current_variant.id | append: ','   %}
+{% assign productids = productids | append: '"inventory_quantity":' | append: current_variant.inventory_quantity | append: ','   %}
+{% assign productids = productids | append: '"inventory_management":' | append: '"' | append:  current_variant.inventory_management | append: '"' | append: ','   %}
+{% assign productids = productids | append: '"inventory_policy":'  | append: '"' | append: current_variant.inventory_policy  | append: '"'    %}
+{% assign productids = productids | append: '},'   %}
+{% endif%}
+{% endfor %}
+{% assign productids = productids | append: ']' %}
+{% assign productids = productids | append: '}' %}
+<script>
+var advance_script = '{{productids}}';  
+</script>
+{% endif%}

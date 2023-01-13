@@ -1,0 +1,27 @@
+<script>
+var pplr_cart = {{ cart | json }};
+var pplr_shop_currency = {{ shop.currency | json }};
+var pplr_enabled_currencies_size = {{ shop.enabled_currencies | size }};
+var pplr_money_formate = {{ shop.money_format | json }};
+var pplr_manual_theme_selector={{ shop.metafields.pplr['manual_theme_selector'] | json }};
+var loadScript_p_common = function(url, callback) {
+  var script = document.createElement("script")
+  script.type = "text/javascript";
+  if (script.readyState) {
+    script.onreadystatechange = function() {
+      if (script.readyState == "loaded" ||
+          script.readyState == "complete") {
+        script.onreadystatechange = null;
+        callback();
+      }
+    };
+  } else {
+    script.onload = function() {
+      callback();
+    };
+  }
+  script.src = url;
+  document.getElementsByTagName("head")[0].appendChild(script);
+};
+loadScript_p_common('//cdn-zeptoapps.com/product-personalizer/pplr_common.js', function() {});
+</script>

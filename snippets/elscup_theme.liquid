@@ -1,0 +1,13 @@
+{% if shop.metafields.elscup['enabled'] == '1' %}
+<script>
+  if(typeof Els === 'undefined') var Els = {};
+  if(typeof Els.cup === 'undefined') Els.cup = {};
+  Els.cup.params = {
+    id: "d72e2f002492cf9c6a1f69d52cd91b94",
+    money_format: '{{shop.money_format}}',
+    root: "https://s3.amazonaws.com/els-apps/countup/",
+    commonRoot: "https://s3.amazonaws.com/els-apps/common/",
+    product: {% if product %}{id: {{product.id}},handle:"{{product.handle}}"}{% else %}null{% endif %}
+  };
+</script>
+{% endif %}

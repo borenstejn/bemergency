@@ -18,10 +18,10 @@ var colorStainsMapping = {
 }
 
 var textColorHash = {
-    gris: "skyblue",
-    rose: "#c8ad7f",
-    bleu: "green",
-    jaune: "skyblue",
+    gris: "#86c9dd",
+    rose: "#f1ddaa",
+    bleu: "#43ad4e",
+    jaune: "#86c9dd",
 
     noir: "pink",
     blanc: "pink",
@@ -42,7 +42,6 @@ var beColorHash = {
 
     noir: "white",
     blanc: "black",
-    vert: "white",
     orange: "black",
     vert: "white",
     violet: "white"

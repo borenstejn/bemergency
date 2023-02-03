@@ -89,7 +89,8 @@ We highly recommend labelling changes, or App installs, so these can also be upd
 }
 
 .crewneck .custom-text {
-    font-size: 50px;
+    font-size: 40px;
+    top: 132px;
 }
 
 .large-input {
@@ -114,7 +115,7 @@ We highly recommend labelling changes, or App installs, so these can also be upd
 }
 
 .crewneck .custom-stains {
-    top: 90px;
+    top: 45px;
     left: 135px;
     width: 40% !important;
 }

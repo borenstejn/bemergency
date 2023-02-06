@@ -47,6 +47,7 @@ var beColorHash = {
     violet: "white"
 }
 
+let cloudinaryPath = "https://res.cloudinary.com/landly/image/upload/v1675696797/";
 var srcPath = "https://cdn.shopify.com/s/files/1/0505/5751/7976/files/";
 var fullWords = "";
 var colorSelected = colorsAvailable[0];
@@ -80,7 +81,7 @@ function setStainsSrc(color, option) {
     } else {
         $(".stains").css('opacity', 1);
         var productPath = [myProductType, colorStainsMapping[color], "stains", option].join("-");
-        var src = srcPath + productPath + ".png";
+        var src = cloudinaryPath + productPath + ".png";
         console.log("stains path")
         console.log(src);
         $(".stains").attr("src", src);

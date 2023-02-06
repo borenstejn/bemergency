@@ -38,7 +38,6 @@ We highly recommend labelling changes, or App installs, so these can also be upd
 .be-word {
     color: white;
     font-family: 'Bebas Neue', cursive !important;
-    font-size: 40px;
 }
 .custom-visual {
     display:flex;
@@ -71,9 +70,7 @@ We highly recommend labelling changes, or App installs, so these can also be upd
 
 .custom-text {
     position: absolute;
-    top: 115px;
     left: 114px;
-    font-size: 38px;
     letter-spacing: 0.06em;
     line-height: 0.85em;
     margin: auto;
@@ -84,6 +81,7 @@ We highly recommend labelling changes, or App installs, so these can also be upd
     min-height: 10px !important;
     height: auto !important;
     z-index: 1;
+    word-spacing: -0.1em;
 }
 
 .hoodie .custom-text {
@@ -91,8 +89,12 @@ We highly recommend labelling changes, or App installs, so these can also be upd
 }
 
 .crewneck .custom-text {
-    font-size: 40px;
+    font-size: 53px;
     top: 132px;
+}
+
+.crewneck .be-word {
+    font-size: 36px;
 }
 
 .large-input {
@@ -102,7 +104,7 @@ We highly recommend labelling changes, or App installs, so these can also be upd
 }
 
 .cropped .custom-text {
-    font-size: 38px;
+    font-size: 36px;
     top: 100px;
 }
 

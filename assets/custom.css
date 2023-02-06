@@ -37,6 +37,8 @@ We highly recommend labelling changes, or App installs, so these can also be upd
 
 .be-word {
     color: white;
+    font-family: 'Bebas Neue', cursive !important;
+    font-size: 40px;
 }
 .custom-visual {
     display:flex;
@@ -77,7 +79,7 @@ We highly recommend labelling changes, or App installs, so these can also be upd
     margin: auto;
     padding: 10px;
     text-align: center;
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'BEFont', sans-serif;
     width: 50% !important;
     min-height: 10px !important;
     height: auto !important;
@@ -139,7 +141,7 @@ We highly recommend labelling changes, or App installs, so these can also be upd
 
 /* bebas-neue-regular - latin */
 @font-face {
-    font-family: 'Bebas Neue';
+    font-family: 'BEFont';
     font-style: normal;
     font-weight: 400;
     src: url('../fonts/bebas-neue-v9-latin-regular.eot'); /* IE9 Compat Modes */
@@ -149,4 +151,9 @@ We highly recommend labelling changes, or App installs, so these can also be upd
     url('../fonts/bebas-neue-v9-latin-regular.woff') format('woff'), /* Modern Browsers */
     url('../fonts/bebas-neue-v9-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
     url('../fonts/bebas-neue-v9-latin-regular.svg#BebasNeue') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+    font-family: "BEFont";
+    src: url("https://res.cloudinary.com/landly/raw/upload/v1675459808/BEFontRegular_onq42e.woff") format("woff");
 }

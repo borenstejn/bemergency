@@ -101,6 +101,7 @@ We highly recommend labelling changes, or App installs, so these can also be upd
     font-size: 32px;
     padding: 16px;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 .cropped .custom-text {
@@ -157,5 +158,5 @@ We highly recommend labelling changes, or App installs, so these can also be upd
 
 @font-face {
     font-family: "BEFont";
-    src: url("https://res.cloudinary.com/landly/raw/upload/v1675459808/BEFontRegular_onq42e.woff") format("woff");
+    src: url("https://res.cloudinary.com/landly/raw/upload/v1677583816/BE/BE-Font.woff") format("woff");
 }

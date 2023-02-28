@@ -47,7 +47,7 @@ var beColorHash = {
     violet: "white"
 }
 
-let cloudinaryPath = "https://res.cloudinary.com/landly/image/upload/v1675696797/";
+let cloudinaryPath = "https://res.cloudinary.com/landly/image/upload/v1677583051/BE/";
 var srcPath = "https://cdn.shopify.com/s/files/1/0505/5751/7976/files/";
 var fullWords = "";
 var colorSelected = colorsAvailable[0];

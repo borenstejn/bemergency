@@ -79,7 +79,7 @@ if (myProductTitle.includes('customizable')) {
         $customImage.show();
         $customField.show();
 
-        const baseStainsUrl = 'https://cdn.shopify.com/s/files/1/0505/5751/7976/files/crewneck-';
+        const baseStainsUrl = 'https://res.cloudinary.com/landly/image/upload/v1677583051/BE/crewneck-';
         for (const color of crewneckColorsAvailable) {
             for (let i = 1; i <= 4; i++) {
                 preloadImage(`${baseStainsUrl}${color}-stains-${i}.png`);

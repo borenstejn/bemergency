@@ -4,26 +4,8 @@ var $customField = $('.custom-field');
 var $customText = $('.custom-text');
 var $beWords = $('#be-words');
 var $pinkButton = $('.form-radio[value="Rose"]');
-var inCustomizationMode = false
+var inCustomizationMode = false;
 
-var summer2023 = [
-    "belle-de-jour",
-    "belle-de-nuit",
-    "beach-lover",
-    "beatitude",
-    "beautiful-day",
-    "bekini",
-    "belle-ile-en-mer",
-    "globe-trotter",
-    "good-vibes",
-    "hello-beach",
-    "liberte",
-    "life-is-better-with-a-tan",
-    "sex-on-the-beach",
-    "other"
-];
-
-var mothersDay = ["best-dad", "best-mum"];
 
 function optionFrom(item) {
     var itemUppercase = item.replaceAll('-', ' ').toUpperCase();
@@ -31,21 +13,29 @@ function optionFrom(item) {
     return string
 };
 
-function getParameterByName(name, url = window.location.href) {
-    name = name.replace(/[\[\]]/g, '\\$&');
-    var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
-        results = regex.exec(url);
-    if (!results) return null;
-    if (!results[2]) return '';
-    return decodeURIComponent(results[2].replace(/\+/g, ' '));
-};
-
-$customImage.hide();
-$(".custom-field" ).hide();
-
 function preloadImage(url) {
     const image = new Image();
     image.src = url;
+}
+
+function setSrc(color, word, format) {
+    var productPath = [myProductType, color, word].join("-");
+    var src = srcPath + productPath + "." + format;
+    $(".main-image").attr("src", src);
+}
+
+
+function setStainsSrc(color, option) {
+    if (option === "none") {
+        $(".stains").css('opacity', 0);
+    } else {
+        $(".stains").css('opacity', 1);
+        var productPath = [myProductType, colorStainsMapping[color], "stains", option].join("-");
+        var src = cloudinaryPath + productPath + ".png";
+        console.log("stains path")
+        console.log(src);
+        $(".stains").attr("src", src);
+    }
 }
 
 function loadCurrentStains(optionSelected) {
@@ -64,6 +54,53 @@ function loadCurrentStains(optionSelected) {
 
 if (myProductTitle.includes('customizable')) {
     console.log("myProductTitle");
+
+    $("#make-your-own").keyup(function () {
+        $firstLine.empty();
+        $firstLine.append(formatCustomWord(this.value.toLowerCase()));
+    });
+
+    $("#make-your-own-2").keyup(function () {
+        $secondLine.empty();
+        $secondLine.append(formatCustomWord(this.value.toLowerCase()));
+    });
+
+
+    var max_chars = 13;
+
+    $('input').keydown(function () {
+        if ($(this).val().length >= max_chars) {
+            $(this).val($(this).val().substr(0, max_chars));
+        }
+    });
+
+    $('input').keyup(function () {
+        if ($(this).val().length >= max_chars) {
+            $(this).val($(this).val().substr(0, max_chars));
+        }
+    });
+    
+    $('input').keyup(function () {
+        console.log('keyup')
+        computeWord();
+        if (('[data-product-swatch="1"] .option--active .form-radio')[0] !== 'undefined') {
+            colorSelected = $('[data-product-swatch="1"] .option--active .form-radio')[0].value.replace(/\s+/g, '').toLowerCase();
+        }
+        $customText.hide();
+        $customText.show();
+        $customText.css('color', fontColorFrom(colorSelected));
+        $beWord.css('color', beColorFrom(colorSelected));
+    });
+
+    $('[data-product-swatch="1"] .form-radio').click(function() {
+        colorSelected = this.value.replace(/\s+/g, '').toLowerCase();
+        $customText.css('color', fontColorFrom(colorSelected));
+        let stainsSelected = $('input[name="properties[choose your stains]"]:checked').val();
+        setStainsSrc(colorSelected, stainsSelected);
+        $('.be-word').css('color', beColorFrom(colorSelected));
+        setSrc(colorSelected, 'other', 'png');
+    });
+
     window.addEventListener('load', function () {
         $pinkButton.click();
         console.log("myProductTitle2");
@@ -93,46 +130,4 @@ if (myProductTitle.includes('customizable')) {
         console.log('images loaded')
         setStainsSrc(colorSelected, '1');
     })
-
-} else {
-    // console.log('not customizable')
-
-    $beWords.show();
-    $customImage.hide();
-    $customField.hide();
-    var collectionString = myProductTags.split('words-')[1].split('-custom')[0]
-    var collection = window[collectionString]
-    if (typeof collection !== 'undefined') {
-        collection.forEach(function(item){
-            $beWords.append(optionFrom(item));
-        });
-    }
 }
-
-$('#be-words input[type=radio]').change(function() {
-    // console.log('click');
-    if ($mainImages[0].style.display !== "none") {
-        $mainImages.toggle();
-        $customImage.toggle();
-    };
-    colorSelected = $('[data-product-swatch="1"] .option--active .form-radio')[0].value.toLowerCase();
-    setSrc(colorSelected, this.value, 'jpg');
-    $('.back-print').hide();
-});
-
-$('[data-product-swatch="1"] .form-radio').click(function() {
-    console.log("click")
-    colorSelected = this.value.replace(/\s+/g, '').toLowerCase();
-    // console.log("newColor");
-    // console.log(colorSelected);
-    if (inCustomizationMode) {
-        $customText.css('color', fontColorFrom(colorSelected));
-        let stainsSelected = $('input[name="properties[choose your stains]"]:checked').val();
-        setStainsSrc(colorSelected, stainsSelected);
-        $('.be-word').css('color', beColorFrom(colorSelected));
-        setSrc(colorSelected, 'other', 'png');
-    } else {
-        let wordSelected = $('input[name="properties[choose your word]"]:checked').val();
-        setSrc(colorSelected, wordSelected, 'jpg');
-    }
-});

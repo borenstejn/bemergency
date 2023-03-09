@@ -68,25 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-function setSrc(color, word, format) {
-    var productPath = [myProductType, color, word].join("-");
-    var src = srcPath + productPath + "." + format;
-    $(".main-image").attr("src", src);
-}
-
 //
-function setStainsSrc(color, option) {
-    if (option === "none") {
-        $(".stains").css('opacity', 0);
-    } else {
-        $(".stains").css('opacity', 1);
-        var productPath = [myProductType, colorStainsMapping[color], "stains", option].join("-");
-        var src = cloudinaryPath + productPath + ".png";
-        console.log("stains path")
-        console.log(src);
-        $(".stains").attr("src", src);
-    }
-}
 
 function computeWord() {
     var firstWord = $("#make-your-own").val().trim().replace(/\s+/g, '-').toLowerCase();
@@ -112,40 +94,5 @@ $('#be-stains input[type=radio]').change(function () {
     loadCurrentStains(this.value)
 });
 
-$('input').keyup(function () {
-    console.log('keyup')
-    computeWord();
-    if (('[data-product-swatch="1"] .option--active .form-radio')[0] !== 'undefined') {
-        colorSelected = $('[data-product-swatch="1"] .option--active .form-radio')[0].value.replace(/\s+/g, '').toLowerCase();
-    }
-    $customText.hide();
-    $customText.show();
-    $customText.css('color', fontColorFrom(colorSelected));
-    $beWord.css('color', beColorFrom(colorSelected));
-});
 
-$("#make-your-own").keyup(function () {
-    $firstLine.empty();
-    $firstLine.append(formatCustomWord(this.value.toLowerCase()));
-});
-
-$("#make-your-own-2").keyup(function () {
-    $secondLine.empty();
-    $secondLine.append(formatCustomWord(this.value.toLowerCase()));
-});
-
-
-var max_chars = 13;
-
-$('input').keydown(function () {
-    if ($(this).val().length >= max_chars) {
-        $(this).val($(this).val().substr(0, max_chars));
-    }
-});
-
-$('input').keyup(function () {
-    if ($(this).val().length >= max_chars) {
-        $(this).val($(this).val().substr(0, max_chars));
-    }
-});
 

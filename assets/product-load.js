@@ -1,9 +1,10 @@
+// Section 1: Variable declarations and initializations
+
 var $mainImages = $('.main-images');
 var $customImage = $('.custom-image');
 var $customField = $('.custom-field');
 var $customText = $('.custom-text');
 var $pinkButton = $('.form-radio[value="Rose"]');
-var inCustomizationMode = false;
 
 let cloudinaryPath = "https://res.cloudinary.com/landly/image/upload/v1677583051/BE/";
 var srcPath = "https://cdn.shopify.com/s/files/1/0505/5751/7976/files/";
@@ -11,8 +12,12 @@ var fullWords = "";
 var $beWord = $('.be-word');
 var $firstLine = $('#first-line');
 var $secondLine = $('#second-line');
+
 $customImage.hide();
 $customField.hide();
+
+
+// Section 2: Mapping objects for color codes and available colors
 
 var colorStainsMapping = {
     rose: "pink",
@@ -20,7 +25,7 @@ var colorStainsMapping = {
     vertclair: "green",
     bleu: "blue",
     gris: 'grey'
-}
+};
 
 var textColorHash = {
     gris: "#86c9dd",
@@ -32,10 +37,13 @@ var textColorHash = {
     vert: "yellow",
     orange: "yellow",
     violet: "black"
-}
+};
 
 var crewneckColorsAvailable = ['pink', 'blue', 'grey', 'yellow'];
 var frenchCrewneckColorsAvailable = ['rose', 'bleu', 'gris', 'jaune'];
+
+
+// Section 3: Helper functions
 
 function preloadImage(url) {
     const image = new Image();
@@ -90,6 +98,7 @@ function beColorFrom(color) {
 function formatCustomWord(word) {
     return word.replace('be', "<span class='be-word'>be</span>");
 }
+
 
 
 if (myProductTitle.includes('customizable')) {
@@ -147,7 +156,6 @@ if (myProductTitle.includes('customizable')) {
     window.addEventListener('load', function () {
         $pinkButton.click();
         console.log("myProductTitle2");
-        inCustomizationMode = true
         colorSelected = 'rose';
 
         console.log("beforesetsrc");

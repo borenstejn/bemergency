@@ -67,9 +67,8 @@ if (myProductTitle.includes('customizable')) {
     window.addEventListener('load', function () {
         $pinkButton.click();
         console.log("myProductTitle2");
-        // console.log('customizable')
         inCustomizationMode = true
-        colorSelected = $('.option--active .form-radio')[1].value.replace(/\s+/g, '').toLowerCase();
+        colorSelected = 'rose';
 
         console.log("beforesetsrc");
         setSrc(colorSelected, 'other', 'png');
